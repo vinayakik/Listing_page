@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-image: linear-gradient(white, skyblue, rgb(108, 113, 105));
+
+        }
+
+        .search-tab {
+            width: 350px;
+            margin-left: 39%;
+            margin-top: 3%;
+            padding: 8px;
+            border-radius: 5px;
+
+            /* border: 2px solid black; */
+        }
+
+        .searchTab button {
+            padding: 7px;
+            margin-left: 10px;
+            border-radius: 5px;
+            background-image: linear-gradient(white, skyblue);
+        }
+
+        .container {
+            width: 80%;
+            margin-left: 10%;
+            margin-top: 3%;
+            /* height:1000px; */
+            /* border-color: red; */
+            /* border: 2px solid red; */
+            /* display: inline-block */
+            display: flex;
+
+        }
+
+        .slide {
+            width: 20%;
+            height: 455px;
+          box-shadow: 6px 6px;
+            border: 1px solid rgb(92, 92, 216);
+            line-height: 1.1;
+            /* display: inline-block */
+        }
+
+        .content {
+            width: 70%;
+            /* border: 2px solid green; */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 0 10%;
+            /* display: inline-block */
+        }
+
+        .card {
+            width: 90%;
+            height: 250px;
+            margin: 3%;
+            /* border: 2px solid rgb(105, 100, 100); */
+            box-shadow: 5px 5px;
+            display: flex;
+            background-color: rgba(190, 184, 184, 0.986);
+        }
+
+        .imageDiv {
+            width: 50%;
+
+        }
+
+        .card img {
+            height: 95%;
+            width: 95%;
+            border-radius: 15px;
+            margin: 2%;
+        }
+
+        .card-content {
+            /* background-color: beige; */
+            margin-top: 2%;
+            line-height: 1.6;
+        }
+        .card-content >h2 {
+            color: blue;
+           
+        }
+        .cuisine-south{
+            line-height: 2;
+            padding: 2px;
+            border-radius: 5px;
+            color:white; 
+            background-color:hsl(240, 71%, 59%)
+        }
+        .cuisine-north{
+            line-height: 2;
+            padding: 2px;
+            border-radius: 5px;
+            color:white; 
+            background-color:hsl(120, 56%, 38%)
+        }
+        .cuisine-fast{
+            line-height: 2;
+            padding: 2px;
+            border-radius: 5px;
+            color:white; 
+            background-color:hsl(9, 76%, 48%)
+        }
+        .cuisine-street{
+            line-height: 2;
+            padding: 2px;
+            border-radius: 5px;
+            color:white; 
+            background-color:hsl(184, 76%, 48%)
+        }
+        .cuisine-chinese{
+            line-height: 2;
+            padding: 2px;
+            border-radius: 5px;
+            color:white; 
+            background-color:hsl(185, 65%, 15%)
+        }
+
+        .slide {
+            padding: 1%;
+            background-image: linear-gradient(skyblue, blue);
+        }
+
+        .heading {
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            margin: 10%;
+            color: beige;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="searchTab">
+        <input type="text" class="search-tab">
+        <button>Search</button>
+    </div>
+    <div class="container">
+        <div class="slide">
+            <p class="heading">Filters</p>
+            <hr>
+            <p class="heading">Cuisine Filter</p>
+            <div class="cuisine-filer">
+                <div><input type="Radio">North Indian</div>
+                <div><input type="Radio">Chinese</div>
+                <div><input type="Radio">Fast food</div>
+                <div><input type="Radio">Street food</div>
+                <div><input type="Radio">South Indian</div>
+            </div>
+            <p class="heading">Cost Filter</p>
+            <div class="cost-filter">
+                <div><input type="Radio">100-300</div>
+                <div><input type="Radio">301-600</div>
+                <div><input type="Radio">601-1000</div>
+                <div><input type="Radio">1000-2000</div>
+            </div>
+        </div>
+
+        <div class="content">
+            <p style="margin-left:-81%">Result for</p>
+            <p style="margin-left:-70%">Number of results : 5</p>
+            <div class="card">
+                <div class="imageDiv">
+                    <img src="images/lunch.png" alt="lunch photo">
+                </div>
+                <div class="card-content">
+                    <h2>AMA Cafe</h2>
+                    <p>House 6, Jayanagaer 4th Block, Bangalore</p>
+                    <p>Rating is Average</p>
+                    <p style="color: green; font-weight:bold">Price: 450</p>
+                    <br>
+                    <span class="cuisine-south"> South Indian</span>
+                    <span class="cuisine-north"> North Indian</span>
+                    <br>
+                    <span class="cuisine-fast"> Fast Food</span>
+                    <span class="cuisine-street"> Street Food</span>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imageDiv">
+                    <img src="images/snacks.png" alt="lunch photo">
+                </div>
+                <div class="card-content">
+                    <h2>Raj Hotel</h2>
+                    <p>3rd main, 4th cross, Gandhi nagar, Bangalore</p>
+                    <p>Rating is High</p>
+                    <!-- <br> -->
+                    <p style="color: green; font-weight:bold">Price: 180</p>
+                    <br>
+                    <span class="cuisine-south"> South Indian</span>
+                    <span class="cuisine-north"> North Indian</span>
+                    <br>
+                    <span class="cuisine-fast"> Fast Food</span>
+                    <span class="cuisine-chinese"> Street Food</span>
+
+
+                </div>
+                
+            </div>
+
+
+            <div class="card">
+            <div class="imageDiv">
+                <img src="images/burger.png" alt="lunch photo">
+            </div>
+            <div class="card-content">
+                <h2>McDonalds</h2>
+                <p>Opp. RV college of Engineering, Bangalore</p>
+                <p>Rating is High</p>
+                <p style="color: green; font-weight:bold">Price: 250</p>
+                <br>
+                    <span class="cuisine-fast"> Fast Food</span>
+                    
+            </div>
+        </div>
+
+            <div class="card">
+                <div class="imageDiv">
+                    <img src="images/meal.jpg" alt="lunch photo">
+                </div>
+                <div class="card-content">
+                    <h2>Purohit Hotel</h2>
+                    <p>4rd main, JP nagar, Bangalore</p>
+                    <p>Rating is Low</p>
+                    <p style="color: green; font-weight:bold">Price: 350</p>
+                    <br>
+                    <span class="cuisine-south"> South Indian</span>
+                    <span class="cuisine-north"> North Indian</span>
+                    <br>
+                    <span class="cuisine-fast"> Fast Food</span>
+                    <span class="cuisine-chinese"> Chinese Food</span>
+
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imageDiv">
+                    <img src="images/noodles.png" alt="lunch photo">
+                </div>
+                <div class="card-content">
+                    <h2>Anna Chat Center</h2>
+                    <p>4th cross, 3rd main, Manjunath nagaer, Bangalore</p>
+                    <p>Rating is High</p>
+                    <p style="color: green; font-weight:bold">Price: 150</p>
+                    <br>
+                    <span class="cuisine-fast"> Fast Food</span>
+                    <span class="cuisine-chinese"> Chinese Food</span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
